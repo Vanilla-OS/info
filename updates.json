@@ -1,0 +1,10 @@
+{
+  "22.04": {
+    "codename": "jammy",
+    "version": "22.04"
+  },
+  "22.10": {
+    "codename": "kinetic",
+    "version": "22.10"
+  }
+}
