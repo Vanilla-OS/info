@@ -1,0 +1,36 @@
+{
+  "tools": {
+    "abroot": {
+      "url": "https://github.com/Vanilla-OS/ABRoot/releases/download/continuous/abrootv2.tar.gz",
+      "sha-256": "3903904a14f4a9d38d5f17cdadc395cebe61bd7ea41e4f2650c80713d9c3cb5a"
+    },
+    "vanilla-tools": {
+      "url": "https://github.com/Vanilla-OS/ABRoot/releases/download/continuous/abrootv2.tar.gz",
+      "sha-256": "3903904a14f4a9d38d5f17cdadc395cebe61bd7ea41e4f2650c80713d9c3cb5a"
+    }
+  },
+  "confs": {
+    "abroot": {
+      "autoRepair": true,
+      "maxParallelDownloads": 2,
+  
+      "registry": "registry.vanillaos.org",
+      "registryAPIVersion": "v2",
+      "name": "vanillaos/desktop",
+      "tag": "main",
+  
+      "iPkgMngPre": "lpkg --unlock",
+      "iPkgMngPost": "lpkg --lock",
+      "iPkgMngAdd": "apt install -y",
+      "iPkgMngRm": "apt remove -y",
+  
+      "partLabelVar": "vos-var",
+      "partLabelA": "vos-a",
+      "partLabelB": "vos-b",
+      "partLabelBoot": "vos-boot",
+      "partLabelEfi": "vos-efi",
+  
+      "libPathStates": "/var/lib/abroot/states"
+    }
+  }
+}
