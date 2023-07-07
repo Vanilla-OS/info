@@ -5,8 +5,8 @@
       "sha-256": "3903904a14f4a9d38d5f17cdadc395cebe61bd7ea41e4f2650c80713d9c3cb5a"
     },
     "vanilla-tools": {
-      "url": "https://github.com/Vanilla-OS/ABRoot/releases/download/continuous/abrootv2.tar.gz",
-      "sha-256": "3903904a14f4a9d38d5f17cdadc395cebe61bd7ea41e4f2650c80713d9c3cb5a"
+      "url": "https://github.com/Vanilla-OS/vanilla-tools/releases/download/continuous/vanilla-tools.tar.gz",
+      "sha-256": "1726799f96439c12ba4c0f92d84439b4c825050cc76b0c8f65682b8183015bcd"
     }
   },
   "confs": {
