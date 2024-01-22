@@ -1,5 +1,23 @@
 [
   {
+    "Id": "#103",
+    "Date": "2024-01-22T16:12:36+01:00",
+    "Arch": "amd64",
+    "Url": "https://github.com/Vanilla-OS/live-iso/actions/runs/7587868548"
+  },
+  {
+    "Id": "#102",
+    "Date": "2024-01-10T21:16:15+01:00",
+    "Arch": "amd64",
+    "Url": "https://github.com/Vanilla-OS/live-iso/actions/runs/7480300550"
+  },
+  {
+    "Id": "#101",
+    "Date": "2024-01-10T11:25:57+01:00",
+    "Arch": "amd64",
+    "Url": "https://github.com/Vanilla-OS/live-iso/actions/runs/7473523178"
+  },
+  {
     "Id": "#100",
     "Date": "2024-01-03T19:48:00-03:00",
     "Arch": "amd64",
