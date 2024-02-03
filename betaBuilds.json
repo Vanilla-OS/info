@@ -1,5 +1,11 @@
 [
   {
+    "Id": "#116",
+    "Date": "2024-02-03T02:28:14+01:00",
+    "Arch": "amd64",
+    "Url": "https://github.com/Vanilla-OS/live-iso/actions/runs/7763576067"
+  },
+  {
     "Id": "#113",
     "Date": "2024-01-30T14:00:00-03:00",
     "Arch": "amd64",
