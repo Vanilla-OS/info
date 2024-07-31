@@ -11,13 +11,13 @@
     "enhancements": [
         {
             "title": "Support for custom images in the Installer",
-            "description": "Users can now use their own system images during the installation process",
+            "description": "Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers.",
             "version": "2.3.7",
             "link": "https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"
         },
         {
             "title": "New and improved translations",
-            "description": "One or more of the supported languages have been updated"
+            "description": "One or more of the supported languages have been updated."
         }
     ]
 }
