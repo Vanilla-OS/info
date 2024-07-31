@@ -1,6 +1,5 @@
-[
-
 {
+"31-07-2024": {
     "bugs": [
         {
             "title": "Newly created users were not able to complete the First Setup Wizard",
@@ -23,4 +22,4 @@
         }
     ]
 }
-]
+}
