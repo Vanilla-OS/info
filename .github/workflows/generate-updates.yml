@@ -1,0 +1,30 @@
+name: Generate Updates
+
+on:
+  push:
+    paths:
+      - "updates/*.json"
+  workflow_dispatch:
+
+jobs:
+  combine:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Combine updates
+        run: bash ./updates/buildUpdates.sh
+
+      - name: Commit and push
+        if: github.repository == 'vanilla-os/info' && github.ref == 'refs/heads/main'
+        continue-on-error: true
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add updates/_index.json
+          git commit -m "chore: new updates index"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
