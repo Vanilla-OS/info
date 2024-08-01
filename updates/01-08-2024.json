@@ -9,7 +9,7 @@
         },
         {
             "title": "Some NVIDIA setups were unable to boot",
-            "affected": "NVIDIA users on some specific setups",
+            "affected": "NVIDIA users on some specific setups"
         }
     ],
     "enhancements": [
