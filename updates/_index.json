@@ -1,5 +1,5 @@
 {
-"31-07-2024": {
+"01-08-2024": {
     "bugs": [
         {
             "title": "Newly created users were not able to complete the First Setup Wizard",
@@ -7,6 +7,10 @@
             "version": "2.2.1",
             "fixed": "2.2.3",
             "link": "https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3"
+        },
+        {
+            "title": "Some NVIDIA setups were unable to boot",
+            "affected": "NVIDIA users on some specific setups",
         }
     ],
     "enhancements": [
@@ -15,6 +19,10 @@
             "description": "Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers.",
             "version": "2.3.7",
             "link": "https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"
+        },
+        {
+            "title": "Support for new NVIDIA images in the installer",
+            "description": "We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one."
         },
         {
             "title": "New and improved translations",
