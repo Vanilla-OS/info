@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://info.vanillaos.org/updates-feed.xml</id>
+    <title>Vanilla OS Updates</title>
+    <updated>2024-08-03T20:07:12.354Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Vanilla OS</name>
+        <email>info@vanillaos.org</email>
+        <uri>https://vanillaos.org/</uri>
+    </author>
+    <link rel="alternate" href="https://vanillaos.org/"/>
+    <link rel="self" href="https://info.vanillaos.org/updates-feed.xml"/>
+    <subtitle>Live feed of Vanilla OS updates and changes.</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Bug Fix: Newly created users were not able to complete the First Setup Wizard]]></title>
+        <id>https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3</id>
+        <link href="https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3"/>
+        <updated>2024-07-31T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Affected: Newly created users. Fixed in version: 2.2.3.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bug Fix: Some NVIDIA setups were unable to boot]]></title>
+        <id/>
+        <link href=""/>
+        <updated>2024-07-31T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Affected: NVIDIA users on some specific setups. Fixed in version: N/A.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancement: Support for custom images in the Installer]]></title>
+        <id>https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7</id>
+        <link href="https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"/>
+        <updated>2024-07-31T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers. Version: 2.3.7.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancement: Support for new NVIDIA images in the installer]]></title>
+        <id/>
+        <link href=""/>
+        <updated>2024-07-31T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one. Version: N/A.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancement: New and improved translations]]></title>
+        <id/>
+        <link href=""/>
+        <updated>2024-07-31T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[One or more of the supported languages have been updated. Version: N/A.]]></summary>
+    </entry>
+</feed>

@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "generate-updates-feed": "node generateAtomFeed.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "feed": "^4.2.2"
+  }
+}
