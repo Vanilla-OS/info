@@ -36,12 +36,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v4
         with:
-          node-version: latest
+          version: latest
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Generate feed
-        run: node ./scripts/generateFeed.cjs
+        run: node ./scripts/generateUpdatesFeed.cjs
 
       - name: Commit and push
         if: github.repository == 'vanilla-os/info' && github.ref == 'refs/heads/main'
@@ -49,7 +59,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add updates/_index.json
+          git add updates-feed.xml
           git commit -m "chore: new updates index"
           git push
         env:
