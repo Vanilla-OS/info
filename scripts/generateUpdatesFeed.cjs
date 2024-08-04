@@ -20,7 +20,7 @@ const feed = new Feed({
     name: 'Vanilla OS',
     email: 'info@vanillaos.org',
     link: 'https://vanillaos.org/',
-  }
+  },
 });
 
 // Process the JSON data and add items to the feed
