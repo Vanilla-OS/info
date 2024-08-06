@@ -15,14 +15,15 @@ for FILE in $(ls ${UPDATES_DIR}/*.json | sort -r); do
   COMBINED_DATA+=("\"${FILE_NAME}\": ${FILE_CONTENT}")
 done
 
-echo "{" > ${OUTPUT_FILE}
-
-for ((i = 0; i < ${#COMBINED_DATA[@]}; i++)); do
-   if [ $i -ne 0 ] && [ $i -lt "$((${#COMBINED_DATA[@]} -1))" ]; then
-    echo "${COMBINED_DATA[$i]}," >> ${OUTPUT_FILE}
-  else
-    echo "${COMBINED_DATA[$i]}" >> ${OUTPUT_FILE}
-  fi
-done
-
-echo "}" >> ${OUTPUT_FILE}
+{
+  echo "{"
+  for ((i = 0; i < ${#COMBINED_DATA[@]}; i++)); do
+    echo -n "  ${COMBINED_DATA[$i]}"
+    if [ $i -lt "$((${#COMBINED_DATA[@]} - 1))" ]; then
+      echo ","
+    else
+      echo ""
+    fi
+  done
+  echo "}"
+} > ${OUTPUT_FILE}
