@@ -1,0 +1,24 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed missing wayland session and GDM freezes for most NVIDIA users",
+            "description": "Some NVIDIA users reported the GNOME Wayland session was not available and some other reported GDM freezes, making the login impossible. This change rollbacks to NVIDIA 535 and introduced a new vanilla-exp image for those who needs more updated drivers (beta drivers). Everything documented in our handbook.",
+            "affected": "NVIDIA users",
+            "link": "https://github.com/Vanilla-OS/nvidia-image/pull/49"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Deprecated the nvidia-proprietary image",
+            "description": "We have deprecated the nvidia-proprietary image and replaced by nvidia and nvidia-exp images. Once upgraded, Vanilla OS will ask the user to switch image by pointing to the documentation."
+        },
+        {
+            "title": "Removed multi image support for NVIDIA devices in installer",
+            "description": "The installer now always proposes to install the nvidia image for all NVIDIA devices, since the nvidia-proprietary image got deprecated. Users who really need for recent drivers (at costs of possible issues) can opt for the Custom Image option during the installation and type ghcr.io/vanilla-os/nvidia-exp once asked."
+        },
+        {
+            "title": "New and improved translations",
+            "description": "One or more of the supported languages have been updated."
+        }
+    ]
+}
