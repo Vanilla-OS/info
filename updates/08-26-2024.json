@@ -1,0 +1,12 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed installer crashing while looking for Wi-Fi connections",
+            "description": "Some users have reported that the installer crashes randomly, after a thorough analysis, one of the issues was related to the continuous scanning of Wi-Fi networks. We have disabled this scanning and the user will have to provide the connection from the system settings.",
+            "affected": "Users installing",
+            "link": "https://github.com/Vanilla-OS/vanilla-installer/pull/425"
+        }
+    ],
+    "enhancements": [
+    ]
+}
