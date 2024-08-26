@@ -1,5 +1,17 @@
 {
-"08-05-2024": {
+  "08-26-2024": {
+    "bugs": [
+        {
+            "title": "Fixed installer crashing while looking for Wi-Fi connections",
+            "description": "Some users have reported that the installer crashes randomly, after a thorough analysis, one of the issues was related to the continuous scanning of Wi-Fi networks. We have disabled this scanning and the user will have to provide the connection from the system settings.",
+            "affected": "Users installing",
+            "link": "https://github.com/Vanilla-OS/vanilla-installer/pull/425"
+        }
+    ],
+    "enhancements": [
+    ]
+},
+  "08-05-2024": {
     "bugs": [
         {
             "title": "Fixed missing wayland session and GDM freezes for most NVIDIA users",
@@ -23,7 +35,7 @@
         }
     ]
 },
-"08-01-2024": {
+  "08-01-2024": {
     "bugs": [
         {
             "title": "Newly created users were not able to complete the First Setup Wizard",
