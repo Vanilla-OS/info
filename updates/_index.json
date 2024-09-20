@@ -1,4 +1,16 @@
 {
+  "09-21-2024": {
+    "bugs": [
+    ],
+    "enhancements": [
+        {
+            "title": "New Image Release with updated packages and bug fixes",
+            "description": "We have shipped a new release across our images bringing updated packages and bug fixes to your Vanilla OS Installation. You will receive the update automatically via VSO in the forthcoming days (based on the your update settings). It can also be performed manually with abroot upgrade command (for updating the host alone) or with vso sys upgrade command (to update both the host and VSO shell environment).",
+            "version": "1.0.2",
+            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2"
+        }
+    ]
+},
   "08-26-2024": {
     "bugs": [
         {
