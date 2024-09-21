@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://info.vanillaos.org/updates-feed.xml</id>
     <title>Vanilla OS Updates</title>
-    <updated>2024-08-04T13:39:28.747Z</updated>
+    <updated>2024-09-21T09:47:39.247Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Vanilla OS</name>
@@ -13,38 +13,80 @@
     <link rel="self" href="https://info.vanillaos.org/updates-feed.xml"/>
     <subtitle>Live feed of Vanilla OS updates and changes.</subtitle>
     <entry>
+        <title type="html"><![CDATA[Enhancement: New Image Release with updated packages and bug fixes]]></title>
+        <id>https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2</id>
+        <link href="https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2"/>
+        <updated>2024-09-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We have shipped a new release across our images bringing updated packages and bug fixes to your Vanilla OS Installation. You will receive the update automatically via VSO in the forthcoming days (based on the your update settings). It can also be performed manually with abroot upgrade command (for updating the host alone) or with vso sys upgrade command (to update both the host and VSO shell environment). Version: 1.0.2.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bug Fix: Fixed installer crashing while looking for Wi-Fi connections]]></title>
+        <id>https://github.com/Vanilla-OS/vanilla-installer/pull/425</id>
+        <link href="https://github.com/Vanilla-OS/vanilla-installer/pull/425"/>
+        <updated>2024-08-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Affected: Users installing. Fixed in version: N/A.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Bug Fix: Fixed missing wayland session and GDM freezes for most NVIDIA users]]></title>
+        <id>https://github.com/Vanilla-OS/nvidia-image/pull/49</id>
+        <link href="https://github.com/Vanilla-OS/nvidia-image/pull/49"/>
+        <updated>2024-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Affected: NVIDIA users. Fixed in version: N/A.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancement: Deprecated the nvidia-proprietary image]]></title>
+        <id/>
+        <link href=""/>
+        <updated>2024-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We have deprecated the nvidia-proprietary image and replaced by nvidia and nvidia-exp images. Once upgraded, Vanilla OS will ask the user to switch image by pointing to the documentation. Version: N/A.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancement: Removed multi image support for NVIDIA devices in installer]]></title>
+        <id/>
+        <link href=""/>
+        <updated>2024-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The installer now always proposes to install the nvidia image for all NVIDIA devices, since the nvidia-proprietary image got deprecated. Users who really need for recent drivers (at costs of possible issues) can opt for the Custom Image option during the installation and type ghcr.io/vanilla-os/nvidia-exp once asked. Version: N/A.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Enhancement: New and improved translations]]></title>
+        <id/>
+        <link href=""/>
+        <updated>2024-08-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[One or more of the supported languages have been updated. Version: N/A.]]></summary>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Bug Fix: Newly created users were not able to complete the First Setup Wizard]]></title>
         <id>https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3</id>
         <link href="https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3"/>
-        <updated>2024-07-31T21:00:00.000Z</updated>
+        <updated>2024-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Affected: Newly created users. Fixed in version: 2.2.3.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Bug Fix: Some NVIDIA setups were unable to boot]]></title>
         <id/>
         <link href=""/>
-        <updated>2024-07-31T21:00:00.000Z</updated>
+        <updated>2024-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Affected: NVIDIA users on some specific setups. Fixed in version: N/A.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Enhancement: Support for custom images in the Installer]]></title>
         <id>https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7</id>
         <link href="https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"/>
-        <updated>2024-07-31T21:00:00.000Z</updated>
+        <updated>2024-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers. Version: 2.3.7.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Enhancement: Support for new NVIDIA images in the installer]]></title>
         <id/>
         <link href=""/>
-        <updated>2024-07-31T21:00:00.000Z</updated>
+        <updated>2024-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one. Version: N/A.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Enhancement: New and improved translations]]></title>
         <id/>
         <link href=""/>
-        <updated>2024-07-31T21:00:00.000Z</updated>
+        <updated>2024-08-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[One or more of the supported languages have been updated. Version: N/A.]]></summary>
     </entry>
 </feed>
