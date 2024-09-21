@@ -45,9 +45,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache: pnpm
+          cache-dependency-path: scripts/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile --filter=./scripts
 
       - name: Generate feed
         run: node ./scripts/generateUpdatesFeed.cjs
