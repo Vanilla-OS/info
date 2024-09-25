@@ -1,0 +1,18 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed a critical bug that prevents the boot in the 1.0.3 image",
+            "description": "Due to changes introduced with the last Debian repo sync, GDM were not able to write on its own path, preventing the device to complete the boot.",
+            "affected": "New and existing ujers",
+            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "New Image Release with boot fixes",
+            "description": "We have shipped a new release across our images with a fix for a critical bug preventing the boot from happening.",
+            "version": "1.0.4",
+            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"
+        }
+    ]
+}
