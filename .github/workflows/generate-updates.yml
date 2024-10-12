@@ -36,22 +36,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v4
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
         with:
-          version: latest
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          cache: pnpm
-          cache-dependency-path: scripts/pnpm-lock.yaml
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile --filter=./scripts
+          deno-version: v2.x
 
       - name: Generate feed
-        run: node ./scripts/generateUpdatesFeed.cjs
+        run: deno run -RW updates/generateUpdatesFeed.ts
 
       - name: Commit and push
         if: github.repository == 'vanilla-os/info' && github.ref == 'refs/heads/main'
