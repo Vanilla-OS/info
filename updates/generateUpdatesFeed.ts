@@ -43,6 +43,7 @@ const feed = new Feed({
     email: "info@vanillaos.org",
     link: "https://vanillaos.org/",
   },
+  copyright: "Copyright (c) Vanilla OS Contributors",
 });
 
 Object.keys(data).forEach((date) => {
