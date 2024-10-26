@@ -1,4 +1,4 @@
-import { Feed } from "npm:feed";
+import { Atom } from "jsr:@feed/feed";
 import { dirname, join } from "jsr:@std/path";
 
 interface Bug {
@@ -28,7 +28,7 @@ const data: UpdateData = JSON.parse(
   await Deno.readTextFile(join(__dirname, "_index.json")),
 );
 
-const feed = new Feed({
+const feed = new Atom({
   title: "Vanilla OS Updates",
   description: "Live feed of Vanilla OS updates and changes.",
   id: "https://info.vanillaos.org/updates-feed.xml",
@@ -38,11 +38,13 @@ const feed = new Feed({
   feedLinks: {
     atom: "https://info.vanillaos.org/updates-feed.xml",
   },
-  author: {
-    name: "Vanilla OS",
-    email: "info@vanillaos.org",
-    link: "https://vanillaos.org/",
-  },
+  authors: [
+    {
+      name: "Vanilla OS Contributors",
+      email: "info@vanillaos.org",
+      link: "https://vanillaos.org/",
+    },
+  ],
   copyright: "Copyright (c) Vanilla OS Contributors",
 });
 
@@ -55,10 +57,10 @@ Object.keys(data).forEach((date) => {
       title: `Bug Fix: ${bug.title}`,
       id: bug.link || "",
       link: bug.link || "",
-      description: `Affected: ${bug.affected}. Fixed in version: ${
+      summary: `Affected: ${bug.affected}. Fixed in version: ${
         bug.fixed || "N/A"
       }.`,
-      date: new Date(date),
+      updated: new Date(date),
     });
   });
 
@@ -67,14 +69,14 @@ Object.keys(data).forEach((date) => {
       title: `Enhancement: ${enhancement.title}`,
       id: enhancement.link || "",
       link: enhancement.link || "",
-      description: `${enhancement.description || ""} Version: ${
+      summary: `${enhancement.description || ""} Version: ${
         enhancement.version || "N/A"
       }.`,
-      date: new Date(date),
+      updated: new Date(date),
     });
   });
 });
 
-await Deno.writeTextFile(join(__dirname, "../updates-feed.xml"), feed.atom1());
+await Deno.writeTextFile(join(__dirname, "../updates-feed.xml"), feed.build());
 
 console.log("Atom feed generated.");
