@@ -1,4 +1,33 @@
 {
+  "11-12-2024": {
+    "bugs": [],
+    "enhancements": [
+        {
+            "title": "Upgraded packages",
+            "description": "We synced the package repository with Debian sid. This includes an upgrade to Gnome 47."
+        },
+        {
+            "title": "Added \"Open Terminal Here\" Option to Gnome Files",
+            "description": "You can now open a terminal window with a right click in the Files app in the folder you're currently working in."
+        },
+        {
+            "title": "Added rescue shell for the terminal",
+            "description": "If your terminal somehow breaks you can now easily recover by opening a \"rescue shell\" by right clicking Black Box in the overview."
+        },
+        {
+            "title": "Yellow accent color",
+            "description": "We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings."
+        },
+        {
+            "title": "ABRoot now supports more registries",
+            "description": "You can now use images from other container registries and are not limited to Github Container Registry."
+        },
+        {
+            "title": "New and improved translations",
+            "description": "Some of the supported languages have been updated."
+        }
+    ]
+},
   "09-25-2024": {
     "bugs": [
         {
