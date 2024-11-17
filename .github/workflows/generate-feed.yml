@@ -1,21 +1,26 @@
-name: Generate Updates
+name: Generate Updates Feed
 
 on:
   push:
     paths:
-      - "updates/*.json"
+      - "updates/_index.json"
   workflow_dispatch:
 
 jobs:
-  combine:
+  generate-feed:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Combine updates
-        run: bash ./updates/buildUpdates.sh
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Generate feed
+        run: deno run -RW updates/generateUpdatesFeed.ts
 
       - name: Commit and push
         if: github.repository == 'vanilla-os/info' && github.ref == 'refs/heads/main'
@@ -23,8 +28,8 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add updates/_index.json
-          git commit -m "chore: new updates index"
+          git add updates-feed.xml
+          git commit -m "chore: update updates feed"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
