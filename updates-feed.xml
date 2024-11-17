@@ -3,12 +3,60 @@
   <title>Vanilla OS Updates</title>
   <subtitle>Live feed of Vanilla OS updates and changes.</subtitle>
   <link rel="alternate" href="https://vanillaos.org/"/>
-  <updated>2024-10-26T12:24:34.289Z</updated>
+  <updated>2024-11-17T13:25:11.855Z</updated>
   <generator>Feed for Deno</generator>
   <author>
     <name>Vanilla OS Contributors</name>
     <email>info@vanillaos.org</email>
   </author>
+  <entry>
+    <title>Enhancement: Upgraded packages</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-11T22:00:00.000Z</updated>
+    <summary>We synced the package repository with Debian sid. This includes an upgrade to Gnome 47. Version: N/A.</summary>
+    <content type="text">We synced the package repository with Debian sid. This includes an upgrade to Gnome 47. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Added &quot;Open Terminal Here&quot; Option to Gnome Files</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-11T22:00:00.000Z</updated>
+    <summary>You can now open a terminal window with a right click in the Files app in the folder you&apos;re currently working in. Version: N/A.</summary>
+    <content type="text">You can now open a terminal window with a right click in the Files app in the folder you&apos;re currently working in. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Added rescue shell for the terminal</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-11T22:00:00.000Z</updated>
+    <summary>If your terminal somehow breaks you can now easily recover by opening a &quot;rescue shell&quot; by right clicking Black Box in the overview. Version: N/A.</summary>
+    <content type="text">If your terminal somehow breaks you can now easily recover by opening a &quot;rescue shell&quot; by right clicking Black Box in the overview. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Yellow accent color</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-11T22:00:00.000Z</updated>
+    <summary>We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings. Version: N/A.</summary>
+    <content type="text">We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: ABRoot now supports more registries</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-11T22:00:00.000Z</updated>
+    <summary>You can now use images from other container registries and are not limited to Github Container Registry. Version: N/A.</summary>
+    <content type="text">You can now use images from other container registries and are not limited to Github Container Registry. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: New and improved translations</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-11T22:00:00.000Z</updated>
+    <summary>Some of the supported languages have been updated. Version: N/A.</summary>
+    <content type="text">Some of the supported languages have been updated. Version: N/A.</content>
+  </entry>
   <entry>
     <title>Bug Fix: Fixed a critical bug that prevents the boot in the 1.0.3 image</title>
     <link href="https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"/>
