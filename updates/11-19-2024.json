@@ -1,0 +1,23 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed invalid upgrade in Gnome Software",
+            "description": "Gnome Software would display an upgrade to gnome-control-center-data but fail to install it."
+        },
+        {
+            "title": "Fixed outdated upgrade indicator",
+            "description": "The indicator that shows up when installing upgrades needed to be upgraded to Gnome 47."
+        },
+        {
+            "title": "Fixed ssh security issue",
+            "description": "SSH host keys were stored in the image, which slightly increased the likelyhood of MITM attacks on ssh connections.",
+            "affected": "Users who manually enabled and logged onto their Vanilla OS device through ssh"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Removed grub-mkconfig",
+            "description": "This utility would break the boot if ran incorrectly."
+        }
+    ]
+}
