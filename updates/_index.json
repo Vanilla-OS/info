@@ -161,8 +161,7 @@
         {
             "title": "Fixed path issue",
             "description": "Some applications couldn't find exported binaries."
-        },
-
+        }
     ],
     "enhancements": [
         {
