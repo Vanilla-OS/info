@@ -1,6 +1,10 @@
 {
     "bugs": [
         {
+            "title": "HP Printer Regression",
+            "description": "The HP printer package (hplib) is currently broken and had to be removed for this release. It will be readded as soon as possible."
+        },
+        {
             "title": "Upgraded packages",
             "description": "We synced the package repository with Debian sid for security and bug fixes."
         },
@@ -17,12 +21,6 @@
         {
             "title": "Bluetooth printers and files",
             "description": "We added support for bluetooth printers and bluetooth file sharing."
-        }
-    ],
-    "regressions": [
-        {
-            "title": "Removed HP Printer Support",
-            "description": "Due to a currently broken package we had to remove HP Printer support. It will be readded as soon as possible."
         }
     ]
 }
