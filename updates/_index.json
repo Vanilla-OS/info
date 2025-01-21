@@ -147,5 +147,34 @@
             "description": "One or more of the supported languages have been updated."
         }
     ]
+},
+  "01-21-2024": {
+    "bugs": [
+        {
+            "title": "Upgraded packages",
+            "description": "We synced the package repository with Debian sid for security and bug fixes."
+        },
+        {
+            "title": "Fixes system partitions in nautilus",
+            "description": "We removed system partitions for nautilus to prevent confusion."
+        },
+        {
+            "title": "Fixed path issue",
+            "description": "Some applications couldn't find exported binaries."
+        },
+
+    ],
+    "enhancements": [
+        {
+            "title": "Bluetooth printers and files",
+            "description": "We added support for bluetooth printers and bluetooth file sharing."
+        }
+    ],
+    "regressions": [
+        {
+            "title": "Removed HP Printer Support",
+            "description": "Due to a currently broken package we had to remove HP Printer support. It will be readded as soon as possible."
+        }
+    ]
 }
 }
