@@ -1,0 +1,14 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed upgrade issue",
+            "description": "Updates could break due to a partition running out of space."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Upgraded ABRoot",
+            "description": "ABRoot now supports installing to /opt inside the image and keeps the state of /media and /mnt so that mountpoints stay consistant."
+        }
+    ]
+}
