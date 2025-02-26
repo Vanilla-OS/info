@@ -150,14 +150,6 @@
 },
   "02-26-2025": {
     "bugs": [
-        {
-            "title": "Temporary pinning of Kernel version",
-            "description": "We are temporarily pinning the kernel version to ensure all our users get the ABRoot version shipped in the previous release which fixes the partition out of space issue."
-        },
-        {
-            "title": "Temporary removal of Wireguard and Waydroid packages",
-            "description": "We have temporarily removed the wireguard and waydroid packages to pin the kernel for mitigating the space issue."
-        }
     ],
     "enhancements": [
         {
