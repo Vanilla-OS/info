@@ -1,0 +1,34 @@
+{
+    "bugs": [
+        {
+            "title": "Temporary pinning of Kernel version",
+            "description": "We are temporarily pinning the kernel version to ensure all our users get the ABRoot version shipped in the previous release which fixes the partition out of space issue."
+        },
+        {
+            "title": "Temporary removal of Wireguard and Waydroid packages",
+            "description": "We have temporarily removed the wireguard and waydroid packages to pin the kernel for mitigating the space issue."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Added support for silent mode in VSO",
+            "description": "We have added support for silent mode in our latest VSO release."
+        },
+        {
+            "title": "Fixed HP Printer Regression",
+            "description": "The HP printer package (hplib) regression has been fixed upstream and it has been added back to our images."
+        },
+        {
+            "title": "Updated Distrobox base package",
+            "description": "We have updated our tools to the latest Distrobox version."
+        },
+        {
+            "title": "Updated GNOME Bluetooth package",
+            "description": "We have updated the GNOME bluetooth file sharing package, which has been renamed upstream."
+        },
+        {
+            "title": "Upgraded packages",
+            "description": "We synced the package repository with Debian sid for security and bug fixes."
+        }
+    ]
+}
