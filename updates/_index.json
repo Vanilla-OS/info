@@ -148,6 +148,60 @@
         }
     ]
 },
+  "06-05-2025": {
+    "bugs": [
+        {
+            "title": "Fixed Files app issue with external drives",
+            "description": "This problem caused nautilus to show up external drives only for a few milliseconds."
+        },
+        {
+            "title": "Automatically repairs broken LVM roots",
+            "description": "Some systems have a slightly corrupted boot drive due to a broken LVM version. These systems will be automatically repaired when booting into the new version. (the partition for user data is completely fine and not affected by this)"
+        },
+        {
+            "title": "Removed broken File app share feature including samba",
+            "description": "We removed the nautilus-share feature, since it was completely unusable anyway and samba caused quite a few problems and is a possible vulnerability. This does not affect mounting network drives with smb. If your workflow requires a samba server, you can add it with the 'abroot pkg' utility."
+        },
+        {
+            "title": "Removed broken waydroid implementation",
+            "description": "This feature never worked correctly on Vanilla OS so we decided to remove it for the time being."
+        },
+        {
+            "title": "Prevents users from running invalid commands in apx",
+            "description": "Some apx commands could create incorrect behavior of the tool itself. This includes commands as removing a stack before removing the subsystem first or creating a subsystem with the same name as an apx command. These will now be blocked automatically."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Gnome 48",
+            "description": "This release includes the new version of the desktop environment Gnome. It has many new features like HDR support or a completely new Wellbeing page in the settings."
+        },
+        {
+            "title": "Completely revamped First Setup",
+            "description": "First Setup was rebuilt from the ground up for a much improved experience and accessibility."
+        },
+        {
+            "title": "Added abroot flag for freeing up space",
+            "description": "Especially when using custom images, it can happen that you run out of space in your roots. A flag for some abroot operations was added to free up space on the future partition to recover from situations like these."
+        },
+        {
+            "title": "Enhanced abroot permissions",
+            "description": "Regular users can now run abroot upgrades, rollback, status and the help page without an admin password."
+        },
+        {
+            "title": "Upgraded distrobox version for apx",
+            "description": "We upgraded to a newer distrobox version with many bug fixes and enhancements."
+        },
+        {
+            "title": "New and improved translations",
+            "description": "Many translations have been added across the program."
+        },
+        {
+            "title": "Upgraded packages",
+            "description": "We synced the package repository with Debian sid for security and bug fixes."
+        }
+    ]
+},
   "02-26-2025": {
     "bugs": [
     ],
