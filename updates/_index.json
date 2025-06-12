@@ -148,6 +148,20 @@
         }
     ]
 },
+  "06-12-2025": {
+    "bugs": [
+        {
+            "title": "Fixes APX Gui",
+            "description": "A missing package prevented the app from starting."
+        },
+        {
+            "title": "Fixes GDM boot issue",
+            "description": "GDM would fail on some systems causing the boot to freeze."
+        }
+    ],
+    "enhancements": [
+    ]
+},
   "06-05-2025": {
     "bugs": [
         {
