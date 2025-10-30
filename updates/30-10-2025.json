@@ -1,0 +1,38 @@
+{
+    "bugs": [
+        {
+            "title": "Waydroid Residual Files",
+            "description": "Removed leftover files from the old Waydroid module."
+        },
+        {
+            "title": "Minor Translation Fixes",
+            "description": "Fixed small translation issues across the system."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Updated Debian Repositories",
+            "description": "Synced with the latest Debian repositories and applied all recent security patches."
+        },
+        {
+            "title": "Initramfs Theme Integration",
+            "description": "Added Vanilla theme to initramfs font generation to ensure proper font inclusion during build."
+        },
+        {
+            "title": "libfuse2 Compatibility",
+            "description": "Added libfuse2 for backward compatibility with AppImages not yet migrated to libfuse3."
+        },
+        {
+            "title": "Distrobox by Default",
+            "description": "Installed Distrobox by default for advanced use cases beyond Apx."
+        },
+        {
+            "title": "Updated Software and Drivers",
+            "description": "All Vanilla OS software and drivers updated to their latest versions."
+        },
+        {
+            "title": "Updated Translations",
+            "description": "Refreshed and improved translations across the system."
+        }
+    ]
+}
