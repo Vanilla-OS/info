@@ -1,0 +1,46 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed Container DNS Resolution",
+            "description": "DNS resolution inside containers was not updated following host network changes."
+        },
+        {
+            "title": "Fixed SSH Daemon Disable",
+            "description": "The SSH daemon appeared as enabled in system settings when it was actually disabled."
+        },
+        {
+            "title": "Fixed Wayland Installer Session",
+            "description": "Fixed the Wayland session for the installer ISO."
+        },
+        {
+            "title": "Fixed Image Unmount in Installer",
+            "description": "Albius did not properly unmount the image after installation."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "GNOME 49",
+            "description": "This release includes the new version of the GNOME desktop environment, which brings many improvements such as enhanced remote desktop."
+        },
+        {
+            "title": "Overhauled Filesystem Structure",
+            "description": "Redesigned the root filesystem structure for better compatibility with GNOME Files and the new image loader."
+        },
+        {
+            "title": "New Package Repository",
+            "description": "Introduced a new package repository synced with Debian snapshot archive, improving build reproducibility."
+        },
+        {
+            "title": "Upgraded ABRoot",
+            "description": "ABRoot now supports rebase command for easier base image switching, and can handle multi-architecture images using Prometheus."
+        },
+        {
+            "title": "Added runroot Command",
+            "description": "New runroot command for safer privileged operations."
+        },
+        {
+            "title": "Updated Translations",
+            "description": "Refreshed and improved translations across the system."
+        }
+    ]
+}
