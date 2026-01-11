@@ -3,17 +3,401 @@
   <title>Vanilla OS Updates</title>
   <subtitle>Live feed of Vanilla OS updates and changes.</subtitle>
   <link rel="alternate" href="https://vanillaos.org/"/>
-  <updated>2024-11-17T13:25:11.855Z</updated>
+  <updated>2026-01-11T08:47:48.688Z</updated>
   <generator>Feed for Deno</generator>
   <author>
     <name>Vanilla OS Contributors</name>
     <email>info@vanillaos.org</email>
   </author>
   <entry>
+    <title>Bug Fix: Fixed Container DNS Resolution</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed SSH Daemon Disable</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed Wayland Installer Session</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed Image Unmount in Installer</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: GNOME 49</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>This release includes the new version of the GNOME desktop environment, which brings many improvements such as enhanced remote desktop. Version: N/A.</summary>
+    <content type="text">This release includes the new version of the GNOME desktop environment, which brings many improvements such as enhanced remote desktop. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Overhauled Filesystem Structure</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Redesigned the root filesystem structure for better compatibility with GNOME Files and the new image loader. Version: N/A.</summary>
+    <content type="text">Redesigned the root filesystem structure for better compatibility with GNOME Files and the new image loader. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: New Package Repository</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Introduced a new package repository synced with Debian snapshot archive, improving build reproducibility. Version: N/A.</summary>
+    <content type="text">Introduced a new package repository synced with Debian snapshot archive, improving build reproducibility. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Upgraded ABRoot</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>ABRoot now supports rebase command for easier base image switching, and can handle multi-architecture images using Prometheus. Version: N/A.</summary>
+    <content type="text">ABRoot now supports rebase command for easier base image switching, and can handle multi-architecture images using Prometheus. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Added runroot Command</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>New runroot command for safer privileged operations. Version: N/A.</summary>
+    <content type="text">New runroot command for safer privileged operations. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Updated Translations</title>
+    <link href=""/>
+    <id></id>
+    <updated>2026-01-10T00:00:00.000Z</updated>
+    <summary>Refreshed and improved translations across the system. Version: N/A.</summary>
+    <content type="text">Refreshed and improved translations across the system. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Waydroid Residual Files</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Minor Translation Fixes</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Updated Debian Repositories</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Synced with the latest Debian repositories and applied all recent security patches. Version: N/A.</summary>
+    <content type="text">Synced with the latest Debian repositories and applied all recent security patches. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Initramfs Theme Integration</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Added Vanilla theme to initramfs font generation to ensure proper font inclusion during build. Version: N/A.</summary>
+    <content type="text">Added Vanilla theme to initramfs font generation to ensure proper font inclusion during build. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: libfuse2 Compatibility</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Added libfuse2 for backward compatibility with AppImages not yet migrated to libfuse3. Version: N/A.</summary>
+    <content type="text">Added libfuse2 for backward compatibility with AppImages not yet migrated to libfuse3. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Distrobox by Default</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Installed Distrobox by default for advanced use cases beyond Apx. Version: N/A.</summary>
+    <content type="text">Installed Distrobox by default for advanced use cases beyond Apx. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Updated Software and Drivers</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>All Vanilla OS software and drivers updated to their latest versions. Version: N/A.</summary>
+    <content type="text">All Vanilla OS software and drivers updated to their latest versions. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Updated Translations</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-10-30T00:00:00.000Z</updated>
+    <summary>Refreshed and improved translations across the system. Version: N/A.</summary>
+    <content type="text">Refreshed and improved translations across the system. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixes APX Gui</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-12T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixes GDM boot issue</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-12T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed Files app issue with external drives</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Automatically repairs broken LVM roots</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Removed broken File app share feature including samba</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Removed broken waydroid implementation</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Prevents users from running invalid commands in apx</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Gnome 48</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>This release includes the new version of the desktop environment Gnome. It has many new features like HDR support or a completely new Wellbeing page in the settings. Version: N/A.</summary>
+    <content type="text">This release includes the new version of the desktop environment Gnome. It has many new features like HDR support or a completely new Wellbeing page in the settings. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Completely revamped First Setup</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>First Setup was rebuilt from the ground up for a much improved experience and accessibility. Version: N/A.</summary>
+    <content type="text">First Setup was rebuilt from the ground up for a much improved experience and accessibility. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Added abroot flag for freeing up space</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Especially when using custom images, it can happen that you run out of space in your roots. A flag for some abroot operations was added to free up space on the future partition to recover from situations like these. Version: N/A.</summary>
+    <content type="text">Especially when using custom images, it can happen that you run out of space in your roots. A flag for some abroot operations was added to free up space on the future partition to recover from situations like these. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Enhanced abroot permissions</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Regular users can now run abroot upgrades, rollback, status and the help page without an admin password. Version: N/A.</summary>
+    <content type="text">Regular users can now run abroot upgrades, rollback, status and the help page without an admin password. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Upgraded distrobox version for apx</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>We upgraded to a newer distrobox version with many bug fixes and enhancements. Version: N/A.</summary>
+    <content type="text">We upgraded to a newer distrobox version with many bug fixes and enhancements. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: New and improved translations</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>Many translations have been added across the program. Version: N/A.</summary>
+    <content type="text">Many translations have been added across the program. Version: N/A.</content>
+  </entry>
+  <entry>
     <title>Enhancement: Upgraded packages</title>
     <link href=""/>
     <id></id>
-    <updated>2024-11-11T22:00:00.000Z</updated>
+    <updated>2025-06-05T00:00:00.000Z</updated>
+    <summary>We synced the package repository with Debian sid for security and bug fixes. Version: N/A.</summary>
+    <content type="text">We synced the package repository with Debian sid for security and bug fixes. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Added support for silent mode in VSO</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-26T00:00:00.000Z</updated>
+    <summary>We have added support for silent mode in our latest VSO release. Version: N/A.</summary>
+    <content type="text">We have added support for silent mode in our latest VSO release. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Fixed HP Printer Regression</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-26T00:00:00.000Z</updated>
+    <summary>The HP printer package (hplib) regression has been fixed upstream and it has been added back to our images. Version: N/A.</summary>
+    <content type="text">The HP printer package (hplib) regression has been fixed upstream and it has been added back to our images. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Updated Distrobox base package</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-26T00:00:00.000Z</updated>
+    <summary>We have updated our tools to the latest Distrobox version. Version: N/A.</summary>
+    <content type="text">We have updated our tools to the latest Distrobox version. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Updated GNOME Bluetooth package</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-26T00:00:00.000Z</updated>
+    <summary>We have updated the GNOME bluetooth file sharing package, which has been renamed upstream. Version: N/A.</summary>
+    <content type="text">We have updated the GNOME bluetooth file sharing package, which has been renamed upstream. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Upgraded packages</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-26T00:00:00.000Z</updated>
+    <summary>We synced the package repository with Debian sid for security and bug fixes. Version: N/A.</summary>
+    <content type="text">We synced the package repository with Debian sid for security and bug fixes. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed upgrade issue</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-19T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Upgraded ABRoot</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-02-19T00:00:00.000Z</updated>
+    <summary>ABRoot now supports installing to /opt inside the image and keeps the state of /media and /mnt so that mountpoints stay consistant. Version: N/A.</summary>
+    <content type="text">ABRoot now supports installing to /opt inside the image and keeps the state of /media and /mnt so that mountpoints stay consistant. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: HP Printer Regression</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-01-21T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixes system partitions in nautilus</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-01-21T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed path issue</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-01-21T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Bluetooth printers and files</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-01-21T00:00:00.000Z</updated>
+    <summary>We added support for bluetooth printers and bluetooth file sharing. Version: N/A.</summary>
+    <content type="text">We added support for bluetooth printers and bluetooth file sharing. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Upgraded packages</title>
+    <link href=""/>
+    <id></id>
+    <updated>2025-01-21T00:00:00.000Z</updated>
+    <summary>We synced the package repository with Debian sid for security and bug fixes. Version: N/A.</summary>
+    <content type="text">We synced the package repository with Debian sid for security and bug fixes. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed invalid upgrade in Gnome Software</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-19T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed outdated upgrade indicator</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-19T00:00:00.000Z</updated>
+    <summary>Affected: undefined. Fixed in version: N/A.</summary>
+    <content type="text">Affected: undefined. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Bug Fix: Fixed ssh security issue</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-19T00:00:00.000Z</updated>
+    <summary>Affected: Users who manually enabled and logged onto their Vanilla OS device through ssh. Fixed in version: N/A.</summary>
+    <content type="text">Affected: Users who manually enabled and logged onto their Vanilla OS device through ssh. Fixed in version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Removed grub-mkconfig</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-19T00:00:00.000Z</updated>
+    <summary>This utility would break the boot if ran incorrectly. Version: N/A.</summary>
+    <content type="text">This utility would break the boot if ran incorrectly. Version: N/A.</content>
+  </entry>
+  <entry>
+    <title>Enhancement: Upgraded packages</title>
+    <link href=""/>
+    <id></id>
+    <updated>2024-11-12T00:00:00.000Z</updated>
     <summary>We synced the package repository with Debian sid. This includes an upgrade to Gnome 47. Version: N/A.</summary>
     <content type="text">We synced the package repository with Debian sid. This includes an upgrade to Gnome 47. Version: N/A.</content>
   </entry>
@@ -21,7 +405,7 @@
     <title>Enhancement: Added &quot;Open Terminal Here&quot; Option to Gnome Files</title>
     <link href=""/>
     <id></id>
-    <updated>2024-11-11T22:00:00.000Z</updated>
+    <updated>2024-11-12T00:00:00.000Z</updated>
     <summary>You can now open a terminal window with a right click in the Files app in the folder you&apos;re currently working in. Version: N/A.</summary>
     <content type="text">You can now open a terminal window with a right click in the Files app in the folder you&apos;re currently working in. Version: N/A.</content>
   </entry>
@@ -29,7 +413,7 @@
     <title>Enhancement: Added rescue shell for the terminal</title>
     <link href=""/>
     <id></id>
-    <updated>2024-11-11T22:00:00.000Z</updated>
+    <updated>2024-11-12T00:00:00.000Z</updated>
     <summary>If your terminal somehow breaks you can now easily recover by opening a &quot;rescue shell&quot; by right clicking Black Box in the overview. Version: N/A.</summary>
     <content type="text">If your terminal somehow breaks you can now easily recover by opening a &quot;rescue shell&quot; by right clicking Black Box in the overview. Version: N/A.</content>
   </entry>
@@ -37,7 +421,7 @@
     <title>Enhancement: Yellow accent color</title>
     <link href=""/>
     <id></id>
-    <updated>2024-11-11T22:00:00.000Z</updated>
+    <updated>2024-11-12T00:00:00.000Z</updated>
     <summary>We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings. Version: N/A.</summary>
     <content type="text">We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings. Version: N/A.</content>
   </entry>
@@ -45,7 +429,7 @@
     <title>Enhancement: ABRoot now supports more registries</title>
     <link href=""/>
     <id></id>
-    <updated>2024-11-11T22:00:00.000Z</updated>
+    <updated>2024-11-12T00:00:00.000Z</updated>
     <summary>You can now use images from other container registries and are not limited to Github Container Registry. Version: N/A.</summary>
     <content type="text">You can now use images from other container registries and are not limited to Github Container Registry. Version: N/A.</content>
   </entry>
@@ -53,7 +437,7 @@
     <title>Enhancement: New and improved translations</title>
     <link href=""/>
     <id></id>
-    <updated>2024-11-11T22:00:00.000Z</updated>
+    <updated>2024-11-12T00:00:00.000Z</updated>
     <summary>Some of the supported languages have been updated. Version: N/A.</summary>
     <content type="text">Some of the supported languages have been updated. Version: N/A.</content>
   </entry>
@@ -61,7 +445,7 @@
     <title>Bug Fix: Fixed a critical bug that prevents the boot in the 1.0.3 image</title>
     <link href="https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"/>
     <id>https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4</id>
-    <updated>2024-09-24T21:00:00.000Z</updated>
+    <updated>2024-09-25T00:00:00.000Z</updated>
     <summary>Affected: New and existing users. Fixed in version: N/A.</summary>
     <content type="text">Affected: New and existing users. Fixed in version: N/A.</content>
   </entry>
@@ -69,7 +453,7 @@
     <title>Enhancement: New Image Release with boot fixes</title>
     <link href="https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"/>
     <id>https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4</id>
-    <updated>2024-09-24T21:00:00.000Z</updated>
+    <updated>2024-09-25T00:00:00.000Z</updated>
     <summary>We have shipped a new release across our images with a fix for a critical bug preventing the boot from happening. Version: 1.0.4.</summary>
     <content type="text">We have shipped a new release across our images with a fix for a critical bug preventing the boot from happening. Version: 1.0.4.</content>
   </entry>
@@ -77,7 +461,7 @@
     <title>Enhancement: New Image Release with updated packages and bug fixes</title>
     <link href="https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2"/>
     <id>https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2</id>
-    <updated>2024-09-20T21:00:00.000Z</updated>
+    <updated>2024-09-21T00:00:00.000Z</updated>
     <summary>We have shipped a new release across our images bringing updated packages and bug fixes to your Vanilla OS Installation. You will receive the update automatically via VSO in the forthcoming days (based on the your update settings). It can also be performed manually with abroot upgrade command (for updating the host alone) or with vso sys upgrade command (to update both the host and VSO shell environment). Version: 1.0.2.</summary>
     <content type="text">We have shipped a new release across our images bringing updated packages and bug fixes to your Vanilla OS Installation. You will receive the update automatically via VSO in the forthcoming days (based on the your update settings). It can also be performed manually with abroot upgrade command (for updating the host alone) or with vso sys upgrade command (to update both the host and VSO shell environment). Version: 1.0.2.</content>
   </entry>
@@ -85,7 +469,7 @@
     <title>Bug Fix: Fixed installer crashing while looking for Wi-Fi connections</title>
     <link href="https://github.com/Vanilla-OS/vanilla-installer/pull/425"/>
     <id>https://github.com/Vanilla-OS/vanilla-installer/pull/425</id>
-    <updated>2024-08-25T21:00:00.000Z</updated>
+    <updated>2024-08-26T00:00:00.000Z</updated>
     <summary>Affected: Users installing. Fixed in version: N/A.</summary>
     <content type="text">Affected: Users installing. Fixed in version: N/A.</content>
   </entry>
@@ -93,7 +477,7 @@
     <title>Bug Fix: Fixed missing wayland session and GDM freezes for most NVIDIA users</title>
     <link href="https://github.com/Vanilla-OS/nvidia-image/pull/49"/>
     <id>https://github.com/Vanilla-OS/nvidia-image/pull/49</id>
-    <updated>2024-08-04T21:00:00.000Z</updated>
+    <updated>2024-08-05T00:00:00.000Z</updated>
     <summary>Affected: NVIDIA users. Fixed in version: N/A.</summary>
     <content type="text">Affected: NVIDIA users. Fixed in version: N/A.</content>
   </entry>
@@ -101,7 +485,7 @@
     <title>Enhancement: Deprecated the nvidia-proprietary image</title>
     <link href=""/>
     <id></id>
-    <updated>2024-08-04T21:00:00.000Z</updated>
+    <updated>2024-08-05T00:00:00.000Z</updated>
     <summary>We have deprecated the nvidia-proprietary image and replaced by nvidia and nvidia-exp images. Once upgraded, Vanilla OS will ask the user to switch image by pointing to the documentation. Version: N/A.</summary>
     <content type="text">We have deprecated the nvidia-proprietary image and replaced by nvidia and nvidia-exp images. Once upgraded, Vanilla OS will ask the user to switch image by pointing to the documentation. Version: N/A.</content>
   </entry>
@@ -109,7 +493,7 @@
     <title>Enhancement: Removed multi image support for NVIDIA devices in installer</title>
     <link href=""/>
     <id></id>
-    <updated>2024-08-04T21:00:00.000Z</updated>
+    <updated>2024-08-05T00:00:00.000Z</updated>
     <summary>The installer now always proposes to install the nvidia image for all NVIDIA devices, since the nvidia-proprietary image got deprecated. Users who really need for recent drivers (at costs of possible issues) can opt for the Custom Image option during the installation and type ghcr.io/vanilla-os/nvidia-exp once asked. Version: N/A.</summary>
     <content type="text">The installer now always proposes to install the nvidia image for all NVIDIA devices, since the nvidia-proprietary image got deprecated. Users who really need for recent drivers (at costs of possible issues) can opt for the Custom Image option during the installation and type ghcr.io/vanilla-os/nvidia-exp once asked. Version: N/A.</content>
   </entry>
@@ -117,7 +501,7 @@
     <title>Enhancement: New and improved translations</title>
     <link href=""/>
     <id></id>
-    <updated>2024-08-04T21:00:00.000Z</updated>
+    <updated>2024-08-05T00:00:00.000Z</updated>
     <summary>One or more of the supported languages have been updated. Version: N/A.</summary>
     <content type="text">One or more of the supported languages have been updated. Version: N/A.</content>
   </entry>
@@ -125,7 +509,7 @@
     <title>Bug Fix: Newly created users were not able to complete the First Setup Wizard</title>
     <link href="https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3"/>
     <id>https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3</id>
-    <updated>2024-07-31T21:00:00.000Z</updated>
+    <updated>2024-08-01T00:00:00.000Z</updated>
     <summary>Affected: Newly created users. Fixed in version: 2.2.3.</summary>
     <content type="text">Affected: Newly created users. Fixed in version: 2.2.3.</content>
   </entry>
@@ -133,7 +517,7 @@
     <title>Bug Fix: Some NVIDIA setups were unable to boot</title>
     <link href=""/>
     <id></id>
-    <updated>2024-07-31T21:00:00.000Z</updated>
+    <updated>2024-08-01T00:00:00.000Z</updated>
     <summary>Affected: NVIDIA users on some specific setups. Fixed in version: N/A.</summary>
     <content type="text">Affected: NVIDIA users on some specific setups. Fixed in version: N/A.</content>
   </entry>
@@ -141,7 +525,7 @@
     <title>Enhancement: Support for custom images in the Installer</title>
     <link href="https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"/>
     <id>https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7</id>
-    <updated>2024-07-31T21:00:00.000Z</updated>
+    <updated>2024-08-01T00:00:00.000Z</updated>
     <summary>Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers. Version: 2.3.7.</summary>
     <content type="text">Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers. Version: 2.3.7.</content>
   </entry>
@@ -149,7 +533,7 @@
     <title>Enhancement: Support for new NVIDIA images in the installer</title>
     <link href=""/>
     <id></id>
-    <updated>2024-07-31T21:00:00.000Z</updated>
+    <updated>2024-08-01T00:00:00.000Z</updated>
     <summary>We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one. Version: N/A.</summary>
     <content type="text">We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one. Version: N/A.</content>
   </entry>
@@ -157,7 +541,7 @@
     <title>Enhancement: New and improved translations</title>
     <link href=""/>
     <id></id>
-    <updated>2024-07-31T21:00:00.000Z</updated>
+    <updated>2024-08-01T00:00:00.000Z</updated>
     <summary>One or more of the supported languages have been updated. Version: N/A.</summary>
     <content type="text">One or more of the supported languages have been updated. Version: N/A.</content>
   </entry>
