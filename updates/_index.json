@@ -1,57 +1,51 @@
 {
-  "11-19-2024": {
+  "2026-01-10": {
     "bugs": [
         {
-            "title": "Fixed invalid upgrade in Gnome Software",
-            "description": "Gnome Software would display an upgrade to gnome-control-center-data but fail to install it."
+            "title": "Fixed Container DNS Resolution",
+            "description": "DNS resolution inside containers was not updated following host network changes."
         },
         {
-            "title": "Fixed outdated upgrade indicator",
-            "description": "The indicator that shows up when installing upgrades needed to be upgraded to Gnome 47."
+            "title": "Fixed SSH Daemon Disable",
+            "description": "The SSH daemon appeared as enabled in system settings when it was actually disabled."
         },
         {
-            "title": "Fixed ssh security issue",
-            "description": "SSH host keys were stored in the image, which slightly increased the likelyhood of MITM attacks on ssh connections.",
-            "affected": "Users who manually enabled and logged onto their Vanilla OS device through ssh"
+            "title": "Fixed Wayland Installer Session",
+            "description": "Fixed the Wayland session for the installer ISO."
+        },
+        {
+            "title": "Fixed Image Unmount in Installer",
+            "description": "Albius did not properly unmount the image after installation."
         }
     ],
     "enhancements": [
         {
-            "title": "Removed grub-mkconfig",
-            "description": "This utility would break the boot if ran incorrectly."
+            "title": "GNOME 49",
+            "description": "This release includes the new version of the GNOME desktop environment, which brings many improvements such as enhanced remote desktop."
+        },
+        {
+            "title": "Overhauled Filesystem Structure",
+            "description": "Redesigned the root filesystem structure for better compatibility with GNOME Files and the new image loader."
+        },
+        {
+            "title": "New Package Repository",
+            "description": "Introduced a new package repository synced with Debian snapshot archive, improving build reproducibility."
+        },
+        {
+            "title": "Upgraded ABRoot",
+            "description": "ABRoot now supports rebase command for easier base image switching, and can handle multi-architecture images using Prometheus."
+        },
+        {
+            "title": "Added runroot Command",
+            "description": "New runroot command for safer privileged operations."
+        },
+        {
+            "title": "Updated Translations",
+            "description": "Refreshed and improved translations across the system."
         }
     ]
 },
-  "11-12-2024": {
-    "bugs": [],
-    "enhancements": [
-        {
-            "title": "Upgraded packages",
-            "description": "We synced the package repository with Debian sid. This includes an upgrade to Gnome 47."
-        },
-        {
-            "title": "Added \"Open Terminal Here\" Option to Gnome Files",
-            "description": "You can now open a terminal window with a right click in the Files app in the folder you're currently working in."
-        },
-        {
-            "title": "Added rescue shell for the terminal",
-            "description": "If your terminal somehow breaks you can now easily recover by opening a \"rescue shell\" by right clicking Black Box in the overview."
-        },
-        {
-            "title": "Yellow accent color",
-            "description": "We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings."
-        },
-        {
-            "title": "ABRoot now supports more registries",
-            "description": "You can now use images from other container registries and are not limited to Github Container Registry."
-        },
-        {
-            "title": "New and improved translations",
-            "description": "Some of the supported languages have been updated."
-        }
-    ]
-},
-  "10-30-2025": {
+  "2025-10-30": {
     "bugs": [
         {
             "title": "Waydroid Residual Files",
@@ -89,104 +83,7 @@
         }
     ]
 },
-  "09-25-2024": {
-    "bugs": [
-        {
-            "title": "Fixed a critical bug that prevents the boot in the 1.0.3 image",
-            "description": "Due to changes introduced with the last Debian repo sync, GDM were not able to write on its own path, preventing the device to complete the boot.",
-            "affected": "New and existing users",
-            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"
-        }
-    ],
-    "enhancements": [
-        {
-            "title": "New Image Release with boot fixes",
-            "description": "We have shipped a new release across our images with a fix for a critical bug preventing the boot from happening.",
-            "version": "1.0.4",
-            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"
-        }
-    ]
-},
-  "09-21-2024": {
-    "bugs": [
-    ],
-    "enhancements": [
-        {
-            "title": "New Image Release with updated packages and bug fixes",
-            "description": "We have shipped a new release across our images bringing updated packages and bug fixes to your Vanilla OS Installation. You will receive the update automatically via VSO in the forthcoming days (based on the your update settings). It can also be performed manually with abroot upgrade command (for updating the host alone) or with vso sys upgrade command (to update both the host and VSO shell environment).",
-            "version": "1.0.2",
-            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2"
-        }
-    ]
-},
-  "08-26-2024": {
-    "bugs": [
-        {
-            "title": "Fixed installer crashing while looking for Wi-Fi connections",
-            "description": "Some users have reported that the installer crashes randomly, after a thorough analysis, one of the issues was related to the continuous scanning of Wi-Fi networks. We have disabled this scanning and the user will have to provide the connection from the system settings.",
-            "affected": "Users installing",
-            "link": "https://github.com/Vanilla-OS/vanilla-installer/pull/425"
-        }
-    ],
-    "enhancements": [
-    ]
-},
-  "08-05-2024": {
-    "bugs": [
-        {
-            "title": "Fixed missing wayland session and GDM freezes for most NVIDIA users",
-            "description": "Some NVIDIA users reported the GNOME Wayland session was not available and some other reported GDM freezes, making the login impossible. This change rollbacks to NVIDIA 535 and introduced a new vanilla-exp image for those who needs more updated drivers (beta drivers). Everything documented in our handbook.",
-            "affected": "NVIDIA users",
-            "link": "https://github.com/Vanilla-OS/nvidia-image/pull/49"
-        }
-    ],
-    "enhancements": [
-        {
-            "title": "Deprecated the nvidia-proprietary image",
-            "description": "We have deprecated the nvidia-proprietary image and replaced by nvidia and nvidia-exp images. Once upgraded, Vanilla OS will ask the user to switch image by pointing to the documentation."
-        },
-        {
-            "title": "Removed multi image support for NVIDIA devices in installer",
-            "description": "The installer now always proposes to install the nvidia image for all NVIDIA devices, since the nvidia-proprietary image got deprecated. Users who really need for recent drivers (at costs of possible issues) can opt for the Custom Image option during the installation and type ghcr.io/vanilla-os/nvidia-exp once asked."
-        },
-        {
-            "title": "New and improved translations",
-            "description": "One or more of the supported languages have been updated."
-        }
-    ]
-},
-  "08-01-2024": {
-    "bugs": [
-        {
-            "title": "Newly created users were not able to complete the First Setup Wizard",
-            "affected": "Newly created users",
-            "version": "2.2.1",
-            "fixed": "2.2.3",
-            "link": "https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3"
-        },
-        {
-            "title": "Some NVIDIA setups were unable to boot",
-            "affected": "NVIDIA users on some specific setups"
-        }
-    ],
-    "enhancements": [
-        {
-            "title": "Support for custom images in the Installer",
-            "description": "Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers.",
-            "version": "2.3.7",
-            "link": "https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"
-        },
-        {
-            "title": "Support for new NVIDIA images in the installer",
-            "description": "We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one."
-        },
-        {
-            "title": "New and improved translations",
-            "description": "One or more of the supported languages have been updated."
-        }
-    ]
-},
-  "06-12-2025": {
+  "2025-06-12": {
     "bugs": [
         {
             "title": "Fixes APX Gui",
@@ -200,7 +97,7 @@
     "enhancements": [
     ]
 },
-  "06-05-2025": {
+  "2025-06-05": {
     "bugs": [
         {
             "title": "Fixed Files app issue with external drives",
@@ -254,7 +151,7 @@
         }
     ]
 },
-  "02-26-2025": {
+  "2025-02-26": {
     "bugs": [
     ],
     "enhancements": [
@@ -280,7 +177,7 @@
         }
     ]
 },
-  "02-19-2025": {
+  "2025-02-19": {
     "bugs": [
         {
             "title": "Fixed upgrade issue",
@@ -294,7 +191,7 @@
         }
     ]
 },
-  "01-21-2025": {
+  "2025-01-21": {
     "bugs": [
         {
             "title": "HP Printer Regression",
@@ -317,6 +214,155 @@
         {
             "title": "Upgraded packages",
             "description": "We synced the package repository with Debian sid for security and bug fixes."
+        }
+    ]
+},
+  "2024-11-19": {
+    "bugs": [
+        {
+            "title": "Fixed invalid upgrade in Gnome Software",
+            "description": "Gnome Software would display an upgrade to gnome-control-center-data but fail to install it."
+        },
+        {
+            "title": "Fixed outdated upgrade indicator",
+            "description": "The indicator that shows up when installing upgrades needed to be upgraded to Gnome 47."
+        },
+        {
+            "title": "Fixed ssh security issue",
+            "description": "SSH host keys were stored in the image, which slightly increased the likelyhood of MITM attacks on ssh connections.",
+            "affected": "Users who manually enabled and logged onto their Vanilla OS device through ssh"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Removed grub-mkconfig",
+            "description": "This utility would break the boot if ran incorrectly."
+        }
+    ]
+},
+  "2024-11-12": {
+    "bugs": [],
+    "enhancements": [
+        {
+            "title": "Upgraded packages",
+            "description": "We synced the package repository with Debian sid. This includes an upgrade to Gnome 47."
+        },
+        {
+            "title": "Added \"Open Terminal Here\" Option to Gnome Files",
+            "description": "You can now open a terminal window with a right click in the Files app in the folder you're currently working in."
+        },
+        {
+            "title": "Added rescue shell for the terminal",
+            "description": "If your terminal somehow breaks you can now easily recover by opening a \"rescue shell\" by right clicking Black Box in the overview."
+        },
+        {
+            "title": "Yellow accent color",
+            "description": "We decided to make the default Gnome Accent color on Vanilla OS yellow to match our general theme. You can change this color from the settings."
+        },
+        {
+            "title": "ABRoot now supports more registries",
+            "description": "You can now use images from other container registries and are not limited to Github Container Registry."
+        },
+        {
+            "title": "New and improved translations",
+            "description": "Some of the supported languages have been updated."
+        }
+    ]
+},
+  "2024-09-25": {
+    "bugs": [
+        {
+            "title": "Fixed a critical bug that prevents the boot in the 1.0.3 image",
+            "description": "Due to changes introduced with the last Debian repo sync, GDM were not able to write on its own path, preventing the device to complete the boot.",
+            "affected": "New and existing users",
+            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "New Image Release with boot fixes",
+            "description": "We have shipped a new release across our images with a fix for a critical bug preventing the boot from happening.",
+            "version": "1.0.4",
+            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.4"
+        }
+    ]
+},
+  "2024-09-21": {
+    "bugs": [
+    ],
+    "enhancements": [
+        {
+            "title": "New Image Release with updated packages and bug fixes",
+            "description": "We have shipped a new release across our images bringing updated packages and bug fixes to your Vanilla OS Installation. You will receive the update automatically via VSO in the forthcoming days (based on the your update settings). It can also be performed manually with abroot upgrade command (for updating the host alone) or with vso sys upgrade command (to update both the host and VSO shell environment).",
+            "version": "1.0.2",
+            "link": "https://github.com/Vanilla-OS/desktop-image/releases/tag/v1.0.2"
+        }
+    ]
+},
+  "2024-08-26": {
+    "bugs": [
+        {
+            "title": "Fixed installer crashing while looking for Wi-Fi connections",
+            "description": "Some users have reported that the installer crashes randomly, after a thorough analysis, one of the issues was related to the continuous scanning of Wi-Fi networks. We have disabled this scanning and the user will have to provide the connection from the system settings.",
+            "affected": "Users installing",
+            "link": "https://github.com/Vanilla-OS/vanilla-installer/pull/425"
+        }
+    ],
+    "enhancements": [
+    ]
+},
+  "2024-08-05": {
+    "bugs": [
+        {
+            "title": "Fixed missing wayland session and GDM freezes for most NVIDIA users",
+            "description": "Some NVIDIA users reported the GNOME Wayland session was not available and some other reported GDM freezes, making the login impossible. This change rollbacks to NVIDIA 535 and introduced a new vanilla-exp image for those who needs more updated drivers (beta drivers). Everything documented in our handbook.",
+            "affected": "NVIDIA users",
+            "link": "https://github.com/Vanilla-OS/nvidia-image/pull/49"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Deprecated the nvidia-proprietary image",
+            "description": "We have deprecated the nvidia-proprietary image and replaced by nvidia and nvidia-exp images. Once upgraded, Vanilla OS will ask the user to switch image by pointing to the documentation."
+        },
+        {
+            "title": "Removed multi image support for NVIDIA devices in installer",
+            "description": "The installer now always proposes to install the nvidia image for all NVIDIA devices, since the nvidia-proprietary image got deprecated. Users who really need for recent drivers (at costs of possible issues) can opt for the Custom Image option during the installation and type ghcr.io/vanilla-os/nvidia-exp once asked."
+        },
+        {
+            "title": "New and improved translations",
+            "description": "One or more of the supported languages have been updated."
+        }
+    ]
+},
+  "2024-08-01": {
+    "bugs": [
+        {
+            "title": "Newly created users were not able to complete the First Setup Wizard",
+            "affected": "Newly created users",
+            "version": "2.2.1",
+            "fixed": "2.2.3",
+            "link": "https://github.com/Vanilla-OS/first-setup/releases/tag/v2.2.3"
+        },
+        {
+            "title": "Some NVIDIA setups were unable to boot",
+            "affected": "NVIDIA users on some specific setups"
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Support for custom images in the Installer",
+            "description": "Users can now use their own system images during the installation process. Usefull for OEMs and users who need specific firmware or drivers.",
+            "version": "2.3.7",
+            "link": "https://github.com/Vanilla-OS/vanilla-installer/releases/tag/v2.3.7"
+        },
+        {
+            "title": "Support for new NVIDIA images in the installer",
+            "description": "We have 2 different images for NVIDIA now, one for recent GPUs using the official Open NVIDIA drivers, one for old GPUs using the official proprietary NVIDIA drivers; the installer will automatically detect the hardware and pick the correct one."
+        },
+        {
+            "title": "New and improved translations",
+            "description": "One or more of the supported languages have been updated."
         }
     ]
 }
