@@ -1,0 +1,14 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed missing Intel, MediaTek and NVIDIA drivers",
+            "description": "Due to changes introduced with the last Debian repo sync, Intel, MediaTek and NVIDIA drivers were not being installed by default."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Added libfuse2-compat compatibility library",
+            "description": "Replaced libfuse2t64 with libfuse2-compat compatibility library which translates the FUSE2 ABI into FUSE3 for legacy AppImages."
+        }
+    ]
+}

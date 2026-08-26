@@ -1,14 +1,14 @@
 [
   {
     "Arch": "amd64",
-    "Date": "2026-08-12",
-    "Iso": "https://download.vanillaos.org/Vanilla-OS-3-stable-amd64.20260812.iso",
-    "Sha256": "https://download.vanillaos.org/Vanilla-OS-3-stable-amd64.20260812.sha256.txt"
+    "Date": "2026-08-28",
+    "Iso": "https://download.vanillaos.org/Vanilla-OS-3-stable-amd64.20260828.iso",
+    "Sha256": "https://download.vanillaos.org/Vanilla-OS-3-stable-amd64.20260828.sha256.txt"
   },
   {
     "Arch": "arm64",
-    "Date": "2026-08-12",
-    "Iso": "https://download.vanillaos.org/Vanilla-OS-3-stable-arm64.20260812.iso",
-    "Sha256": "https://download.vanillaos.org/Vanilla-OS-3-stable-arm64.20260812.sha256.txt"
+    "Date": "2026-08-28",
+    "Iso": "https://download.vanillaos.org/Vanilla-OS-3-stable-arm64.20260828.iso",
+    "Sha256": "https://download.vanillaos.org/Vanilla-OS-3-stable-arm64.20260828.sha256.txt"
   }
 ]
