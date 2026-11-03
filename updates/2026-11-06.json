@@ -1,0 +1,22 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed FUSE2 compatibility library",
+            "description": "The libfuse2-compat library was not integrated correctly."
+        },
+        {
+            "title": "Fixed Chinese translation",
+            "description": "BCP 47 language tags were not recognized by glibc."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Upgraded packages",
+            "description": "Synced with the latest Debian package repository, including Linux kernel 7.2.11 and GNOME 51."
+        },
+        {
+            "title": "Added additional audio firmware",
+            "description": "Added support for certain Intel and Cirrus Logic audio chips."
+        }
+    ]
+}
