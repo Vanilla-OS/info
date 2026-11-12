@@ -1,0 +1,14 @@
+{
+    "bugs": [
+        {
+            "title": "Fixed Apx regression",
+            "description": "The Apx wrapper script was hanging silently due to a Flatpak regression."
+        }
+    ],
+    "enhancements": [
+        {
+            "title": "Upgraded packages",
+            "description": "Synced with the latest Debian package repository, including Linux kernel 7.3.3."
+        }
+    ]
+}
